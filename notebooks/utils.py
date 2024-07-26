@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import pickle
 
 def dataframe_info(df):
     """
@@ -33,3 +34,23 @@ def racine_projet():
     # Remonter de deux niveaux pour atteindre la racine du projet
     racine = os.path.dirname(dossier_courant)
     return racine
+
+def save_model(model, model_name)
+    """
+    Renseigner le modèle et le nom que l'on souhaite lui associé pour le sauvegarder directement dans le dossier models.
+    """
+    chemin_fichier = racine_projet()+'/models/'+ model_name
+    with open(chemin_fichier, 'wb') as file:
+        pickle.dump(model, file)
+
+def load_model(model_name)
+    """
+    Renseigner le nom du modèle pour le charger.
+    Renvoie en sortie le modèle chargé
+    """
+    chemin_fichier = racine_projet()+'/models/'+ model_name
+
+    with open(chemin_fichier, 'rb') as file:
+        loaded_model = pickle.load(file)
+    
+    return loaded_model

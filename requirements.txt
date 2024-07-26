@@ -132,4 +132,5 @@ webencodings==0.5.1
 websocket-client @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_8c3cjp8r36/croot/websocket-client_1715878317325/work
 Werkzeug==3.0.3
 wrapt==1.16.0
+xgboost==2.1.0
 xyzservices==2024.6.0
